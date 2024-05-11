@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid silver; */
+    box-sizing: border-box;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.5s;
+}
+
