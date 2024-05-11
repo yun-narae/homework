@@ -22,3 +22,5 @@ https://github.com/yun-narae/homework/tree/main/naver
 **어려웠던 점**
 - 마크업이 어려웠다 -> 실습떄하던 마크업을 살짝쿵 보면서 하느라 뿌듯함이 많이 없는 과제이지만 복습을 했다는 의미를 두려한다!
 
++ "naver.md 파일에 작성하고 homework 폴더에 있는 README.md파일에 링크로 연결한다." -> 이거 어떻게 하는지 여쭤보기!
+
