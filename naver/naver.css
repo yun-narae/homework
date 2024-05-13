@@ -1,3 +1,4 @@
+/* 전역 스타일 */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +9,6 @@
     transition: 0.5s;
     font-size: 1rem;
     color: #181818;
-    /* border: 1px solid silver; */
 }
 
 input {
@@ -25,14 +25,15 @@ input:focus {
 fieldset {
     border: 0;
     margin: 0;
-    padding: 0
-  }
+    padding: 0;
+}
 
 body {
     width: 100%;
     height: 100vh;
 }
 
+/* 레이아웃 */
 article {
     margin-top: 7.5rem;
 }
@@ -44,37 +45,36 @@ article {
     margin-bottom: 2.5rem;
 }
 
+/* 로그인 폼 컴포넌트 */
 .login-form {
     padding: 0 1.25rem;
     width: 100%;
     background-color: beige;
     margin-bottom: 0.875rem;
+}
 
-    .login-input-group {
-        input {
-            font-size: 0.875rem;
-            width: 100%;
-            height: 2.8125rem;
-            border: 1px solid #dadada;
-        }
-    
-        input:focus-visible {
-            outline: 1px solid #03cf5d;
-            background-color:  #e9f0fd;
-        }
-    }
+.login-input-group input {
+    font-size: 0.875rem;
+    width: 100%;
+    height: 2.8125rem;
+    border: 1px solid #dadada;
+}
 
-    .login-input-group div:first-child {
-        margin-bottom: 0.75rem;
-    }
-    
-    .login-button {
-        font-size: 1rem;
-        width: 100%;
-        height: 2.8125rem;
-        background: #03cf5d;
-        color: #fff;
-        margin-top: 1.25rem;
-        border: none;
-    }
+.login-input-group input:focus-visible {
+    outline: 1px solid #03cf5d;
+    background-color:  #e9f0fd;
+}
+
+.login-input-group div:first-child {
+    margin-bottom: 0.75rem;
+}
+
+.login-button {
+    font-size: 1rem;
+    width: 100%;
+    height: 2.8125rem;
+    background: #03cf5d;
+    color: #fff;
+    margin-top: 1.25rem;
+    border: none;
 }
