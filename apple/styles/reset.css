@@ -30,3 +30,9 @@ p, figure{
 input, textarea, select, option, button{
   font: inherit;
 }
+
+button {
+  border: none;
+  margin: 0;
+  background: none;
+}
