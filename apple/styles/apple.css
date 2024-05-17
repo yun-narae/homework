@@ -11,8 +11,13 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--gap-spacing);
+
+    @media (min-width:1024px) {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
+/* 카드 컴포넌트 */
 .card {
     height: var(--size);
     background-color: beige;
@@ -44,6 +49,18 @@
         margin-bottom: var(--x-small-spacing);
         color: var(--gray);
     }
+    
+    @media (min-width:1024px) {
+        margin-top: var(--extra-large-spacing);
+
+        h2 {
+            font-size: var(--extra-large-text);
+        }
+    
+        b {
+            font-size: var(--medium-text);
+        }
+    }
 }
 
 .card-btn {
@@ -69,5 +86,13 @@
   
     .price-btn {
         color: var(--blue-400);
+    }
+
+    @media (min-width:1024px) {
+        button {
+            font-size: var(--x-small-text);
+            border: 1px solid var();
+            padding: var();
+        }
     }
   }
