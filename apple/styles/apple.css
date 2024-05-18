@@ -22,20 +22,35 @@
 .card {
     height: var(--size);
     text-align: center;
+    overflow: hidden;
+    position: relative;
+
     /* background: image-set(url("../products/ipad_pro.jpeg")1x, url("../products/ipad_pro_2x.jpeg")2x); */
 }
 
 /* 카드 배경 컴포넌트 */
 figure {
+    width: 100%;
+    
     img {
-        max-width: 100%;
+        min-width: 100%;
+        height: auto;
         vertical-align: bottom;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+
     }
 }
 
 /* 카드 텍스트 컴포넌트 */
 .card-text {
     margin-top: var(--large-spacing);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
 
     h2 {
         font-size: var(--large-text);
@@ -73,6 +88,9 @@ figure {
 .card-btn {
     margin-top: var(--x-small-spacing);
     margin-bottom: var(--x-small-spacing);
+    display: flex;
+    flex-flow: row nowrap;
+    white-space: nowrap;
 
     :first-child {
         margin-right: var(--base-spacing);
