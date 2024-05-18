@@ -18,5 +18,8 @@
 ### 제출 링크
 [5월 16일 apple 과제](https://github.com/yun-narae/homework/tree/main/apple)
 
+### 진행과정
+- div를 많이 안사용하는게 좋다고 하셨는데 card-text와 card-btn을 구분한 이유는 card-btn으로 한번에 margin-top과 bottom을 주고자 하였다.
+
 ### 어려웠던 점
-- 
+- css 하면서 마크업구조를 깨작깨작 바꾼게 아쉽다ㅠㅠ

@@ -4,6 +4,7 @@
 
 * {
     color: var(--black);
+    transition: 0.3s;
 }
 
 /* 카드 레이아웃 */
@@ -20,14 +21,19 @@
 /* 카드 컴포넌트 */
 .card {
     height: var(--size);
-    background-color: beige;
     text-align: center;
-    background: image-set(url("../products/ipad_pro.jpeg")1x, url("../products/ipad_pro_2x.jpeg")2x);
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background: image-set(url("../products/ipad_pro.jpeg")1x, url("../products/ipad_pro_2x.jpeg")2x); */
 }
 
+/* 카드 배경 컴포넌트 */
+figure {
+    img {
+        max-width: 100%;
+        vertical-align: bottom;
+    }
+}
+
+/* 카드 텍스트 컴포넌트 */
 .card-text {
     margin-top: var(--large-spacing);
 
@@ -49,24 +55,25 @@
         margin-bottom: var(--x-small-spacing);
         color: var(--gray);
     }
-    
+
     @media (min-width:1024px) {
         margin-top: var(--extra-large-spacing);
 
         h2 {
             font-size: var(--extra-large-text);
         }
-    
+
         b {
             font-size: var(--medium-text);
         }
     }
 }
 
+/* 버튼 컴포넌트 */
 .card-btn {
     margin-top: var(--x-small-spacing);
     margin-bottom: var(--x-small-spacing);
-    
+
     :first-child {
         margin-right: var(--base-spacing);
     }
@@ -77,22 +84,31 @@
         border-radius: 50px;
         padding: var(--x-small-spacing);
         background: transparent;
+
+        &:hover {
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        @media (min-width:1024px) {
+            font-size: var(--x-small-text);
+        }
     }
 
     .more-btn {
         color: var(--white);
         background: var(--blue-100);
-    }
-  
-    .price-btn {
-        color: var(--blue-400);
-    }
 
-    @media (min-width:1024px) {
-        button {
-            font-size: var(--x-small-text);
-            border: 1px solid var();
-            padding: var();
+        &:hover {
+            background: var(--blue-400);
         }
     }
-  }
+
+    .price-btn {
+        color: var(--blue-400);
+
+        &:hover {
+            background: var(--bg-white);
+        }
+    }
+}
